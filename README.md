@@ -12,6 +12,7 @@ python3 main.py
 ```sh
 git clone
 cd app
+python313 -m venv my-env-app
 source my-env-app/Scripts/Activate
 pip3 install -r requirements.txt
 python313 main.py
