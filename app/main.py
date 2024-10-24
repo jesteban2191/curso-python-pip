@@ -10,14 +10,14 @@ def run():
   percentages = list(map(lambda x: x['World Population Percentage'], data))
   '''
 
-  df = pd.read_csv('data.csv')
+  df = pd.read_csv(f'D:/Documentos(D)/Cursos/Platzy/Python De Cero a Experto/PIP y Entornos Virtuales/curso-python-pip/app/data.csv')
   df = df[df['Continent'] == 'Africa']
 
   countries = df['Country'].values
   percentages = df['World Population Percentage'].values
   charts.generate_pie_chart(countries, percentages)
 
-  data = read_csv.read_csv('data.csv')
+  data = read_csv.read_csv('D:/Documentos(D)/Cursos/Platzy/Python De Cero a Experto/PIP y Entornos Virtuales/curso-python-pip/app/data.csv')
   country = input('Type Country => ')
   print(country)
 
